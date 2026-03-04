@@ -1,0 +1,300 @@
+@use '../utils/variables' as *;
+
+@media(min-width: 360px) {
+  .sidebar {
+    width: 360px;
+    min-height: 100dvh;
+  }
+
+  .modal {
+    width: 360px;
+  }
+}
+
+@media(min-width: $bp-tablet) {
+  .sidebar {
+    width: 320px;
+  }
+
+  .modal {
+    width: 440px;
+  }
+
+  .modal-button__close {
+    position: absolute;
+    left: -96px;
+  }
+
+  .header {
+    padding: 24px;
+    gap: 4px;
+  }
+
+  .header__right {
+    .header__divider {
+      margin-right: 0;
+    }
+  }
+
+  .header__left {
+    .header__divider {
+      display: inline-block;
+      width: 2px;
+      height: 32px;
+      border-radius: 1px;
+      background-color: $color-divider;
+      margin-right: 0;
+    }
+  }
+
+  .header__action--call,
+  .header__action--chat,
+  .header__action--profile {
+    display: flex;
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
+
+  .section__heading {
+    padding: 24px;
+  }
+
+  .services__image {
+    width: 360px;
+    border-radius: 6px;
+  }
+
+  .services__content {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 0 24px;
+
+    .button {
+      padding-left: 0;
+    }
+  }
+
+  .services__description {
+    padding: 0;
+  }
+
+  .page-hero__text-tablet {
+    display: inline;
+  }
+
+  .services__menu {
+    padding-left: 24px;
+  }
+
+
+  br {
+    display: inline-block;
+  }
+
+  .brands__slider {
+    display: none;
+  }
+
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    place-items: center;
+    column-gap: 32px;
+    padding-left: 16px;
+    gap: 16px;
+  }
+
+  .brands__card {
+    width: 224px;
+  }
+
+  .devices__slider {
+    display: none;
+  }
+
+  .devices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    place-items: center;
+    column-gap: 32px;
+    gap: 16px;
+    padding-left: 24px;
+  }
+
+  .prices__slider {
+    display: none;
+  }
+
+  .prices-table {
+    display: block;
+    text-align: left;
+    font-family: "TT Lakes Regular", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 24px;
+  }
+
+  .prices-text {
+    padding: 0 24px;
+  }
+
+  #offer {
+    padding-left: 24px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 35px;
+    padding: 32px 24px 0;
+    margin-bottom: 25px;
+  }
+
+  .footer-text__left {
+    text-align: left;
+  }
+
+  .footer-text__center{
+    text-align: center;
+  }
+
+  .footer-text__right {
+    text-align: right;
+  }
+
+  .button.show {
+    display: flex;
+    padding-left: 24px;
+  }
+}
+
+@media(min-width: $bp-desktop) {
+  .layout {
+    display: flex;
+  }
+
+  .page {
+    flex: 1;
+  }
+
+  .header {
+    display: none;
+  }
+
+  body.menu-open .sidebar {
+    transform: none;
+  }
+
+  .sidebar {
+    position: relative;
+    transform: none;
+    height: auto;
+    flex-shrink: 0;
+    padding-top: 35px;
+  }
+
+  .sidebar__header-close {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .section {
+    margin-bottom: 50px;
+  }
+
+  .section__heading {
+    padding-left: 0;
+  }
+
+  .services__heading {
+    margin-top: 42px;
+  }
+
+  .services__button--request,
+  .services__button--status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    font-family: "TT Lakes Medium", sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .services__reviews {
+    display: block;
+  }
+
+  .services__reviews-button {
+    display: inline-flex;
+    border: none;
+    background: none;
+    padding: 8px 16px;
+
+    font-family: 'TT Lakes Medium', sans-serif;
+    color: $color-text-menu;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .services__menu, .services__content, .services__reviews {
+    padding-left: 34px;
+  }
+
+  .brands {
+    padding-left: 32px;
+  }
+
+  .brands-grid {
+    padding-left: 0;
+    grid-template-columns: repeat(4, 240px);
+  }
+
+  .brands__card {
+    width: 240px;
+  }
+
+  .devices {
+    padding-left: 32px;
+  }
+  .devices-grid {
+    padding-left: 0;
+    grid-template-columns: repeat(4, 240px);
+  }
+
+  .prices {
+    padding-left: 32px;
+  }
+
+  .prices-table {
+    margin: 0 32px 0 0;
+  }
+
+  .prices-text {
+    padding: 0;
+  }
+
+  #offer {
+    padding-left: 0;
+  }
+
+  .footer {
+    flex-direction: row;
+    gap: 145px;
+    padding: 32px 32px 0;
+    margin-bottom: 21px;
+  }
+
+  .button.show {
+    padding-left: 0;
+  }
+
+}

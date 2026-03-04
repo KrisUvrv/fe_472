@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Final Mockup - CPS</title>
+</head>
+<body>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <button type="button" class="sidebar__header-close" aria-label="Закрыть"><img src="assets/images/close.svg"
+                                                                                    alt=""></button>
+        <a href="#"><img src="assets/images/logo.svg" alt="logo icon"></a>
+        <button type="button" class="sidebar__header-search" aria-label="Поиск"><img src="assets/images/search.svg"
+                                                                                     alt=""></button>
+      </div>
+
+      <nav>
+        <ul class="sidebar__menu">
+          <li><a href="#" class="sidebar__menu-item">Ремонт техники</a></li>
+          <li><a href="#" class="sidebar__menu-item sidebar__menu-item_active">Услуги и сервисы</a></li>
+          <li><a href="#" class="sidebar__menu-item">Корпоративным клиентам</a></li>
+          <li><a href="#" class="sidebar__menu-item">Продавцам техники</a></li>
+          <li><a href="#" class="sidebar__menu-item">Партнерам</a></li>
+          <li><a href="#" class="sidebar__menu-item">Производителям</a></li>
+          <li><a href="#" class="sidebar__menu-item">Наши сервисные центры</a></li>
+          <li><a href="#" class="sidebar__menu-item">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__footer-actions">
+          <button class="open-call" type="button" aria-label="Позвонить"><img src="assets/images/call.svg" alt="">
+          </button>
+          <button class="open-feedback" type="button" aria-label="Написать"><img src="assets/images/chat.svg" alt=""></button>
+          <button type="button" aria-label="Перейти в профиль"><img src="assets/images/profile.svg" alt=""></button>
+        </div>
+        <a href="mailto:mail@cps.com">mail@cps.com</a>
+        <a href="tel:88008908900" class="sidebar__footer-tel">8 800 890 8900</a>
+        <ul class="sidebar__footer-locales">
+          <li><a href="#" class="sidebar__footer-item sidebar__footer-item_active">RU</a></li>
+          <li><a href="#" class="sidebar__footer-item">EN</a></li>
+          <li><a href="#" class="sidebar__footer-item">CH</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <aside class="modal modal-call">
+
+      <button type="button" class="modal-button__close" aria-label="Закрыть">
+        <img src="assets/images/close.svg"
+             alt="">
+      </button>
+
+      <div class="modal__heading">
+        <div class="modal__title">
+          <img class="modal__highlight" src="assets/images/highlight.svg" alt="highlight">
+          <p class="modal__title-text">Заказать звонок</p>
+        </div>
+      </div>
+
+        <form class="modal__form">
+          <label>
+            <input type="tel" placeholder="Телефон"/>
+          </label>
+          <div class="modal__text">Нажимая “отправить”, вы даете согласие на <span class="modal__text-pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal__text-pink">политикой конфиденциальности</span></div>
+          <button class="modal-button" type="submit">
+            <span>Отправить</span>
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                    fill="#FFFFFF"/>
+            </svg>
+          </button>
+        </form>
+
+    </aside>
+
+    <aside class="modal modal-feedback">
+
+      <button type="button" class="modal-button__close" aria-label="Закрыть">
+        <img src="assets/images/close.svg"
+             alt="">
+      </button>
+
+      <div class="modal__heading">
+        <div class="modal__title">
+          <img class="modal__highlight" src="assets/images/highlight.svg" alt="highlight">
+          <p class="modal__title-text">Обратная связь</p>
+        </div>
+      </div>
+
+      <form class="modal__form">
+        <label>
+          <input type="text" placeholder="Имя"/>
+        </label>
+        <label>
+          <input type="tel" placeholder="Телефон"/>
+        </label>
+        <label>
+          <input type="email" placeholder="Электронная почта"/>
+        </label>
+        <label>
+          <input type="text" placeholder="Сообщение"/>
+        </label>
+        <div class="modal__text">Нажимая “отправить”, вы даете согласие на <span class="modal__text-pink">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal__text-pink">политикой конфиденциальности</span></div>
+        <button class="modal-button" type="submit">
+          <span>Отправить</span>
+          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                  fill="#FFFFFF"/>
+          </svg>
+        </button>
+      </form>
+
+    </aside>
+
+    <div class="page">
+      <header class="header">
+
+        <div class="header__left">
+          <button class="header__action header__burger">
+            <img class="header__icon" src="assets/images/burger-menu.svg" alt="burger-menu icon">
+          </button>
+
+          <span class="header__divider"></span>
+
+          <a class="header__logo" href="#">
+            <img class="header__logo-image" src="assets/images/logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <div class="header__right">
+          <button class="header__action header__action--call open-call">
+            <img class="header__icon" src="assets/images/call.svg" alt="call">
+          </button>
+          <button class="header__action header__action--chat open-feedback" >
+            <img class="header__icon" src="assets/images/chat.svg" alt="chat">
+          </button>
+          <button class="header__action header__action--profile">
+            <img class="header__icon" src="assets/images/profile.svg" alt="profile">
+          </button>
+
+          <span class="header__divider"></span>
+
+          <button class="header__action header__action--repair">
+            <img class="header__icon" src="assets/images/repair.svg" alt="repair">
+          </button>
+          <button class="header__action header__action--status">
+            <img class="header__icon" src="assets/images/check-status.svg" alt="check status">
+          </button>
+        </div>
+
+      </header>
+
+      <section class="section page-hero">
+
+        <div class="services__heading">
+          <div class="services__title">
+            <img class="services__highlight" src="assets/images/highlight.svg" alt="highlight">
+            <h1 class="services__title-text">Услуги и сервисы</h1>
+          </div>
+
+          <div class="services__actions">
+
+            <button class="services__button--request">Оставить заявку
+              <a class="header__action" href="#">
+                <img class="services__button-icon" src="assets/images/repair.svg" alt="repair">
+              </a>
+            </button>
+
+            <button class="services__button--status">Статус ремонта
+              <a class="header__action" href="#">
+                <img class="services__button-icon" src="assets/images/check-status.svg" alt="check status">
+              </a>
+            </button>
+
+          </div>
+        </div>
+
+        <nav class="services__menu">
+
+          <ul class="services__menu-list">
+            <li><a href="#" class="services__menu-item services__menu-item--active">Ремонтируемые устройства</a></li>
+            <li><a href="#" class="services__menu-item">Дополнительные услуги</a></li>
+            <li><a href="#" class="services__menu-item">Цены на услуги</a></li>
+            <li><a href="#" class="services__menu-item">Специальные цены</a></li>
+            <li><a href="#" class="services__menu-item">Адреса сервисных центров</a></li>
+          </ul>
+
+          <div class="services__menu-shadow"></div>
+
+        </nav>
+
+        <div class="services__reviews">
+          <a href="#" class="services__reviews-button">Отзывы</a>
+        </div>
+
+        <div class="services__content">
+          <div class="services__description">
+
+            <div class="services__text">
+              <p>
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                отремонтировать
+                свой ноутбук Dell с официальной гарантией производителя.
+              </p>
+              <br>
+              <p class="page-hero__text-tablet">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь,
+                советуют нас родным и близким.
+              </p>
+              <p class="page-hero__text hidden">
+                <br>
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span
+                class="page-hero__text-span">, что подтверждает большое
+                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</span>
+              </p>
+            </div>
+
+            <button class="button read-more">
+              <img class="button__icon" src="assets/images/arrows_show.svg" alt="read more">
+              <span class="button__text">Читать далее</span>
+            </button>
+          </div>
+
+          <div class="services__image-wrapper">
+            <img class="services__image" src="assets/images/CPS.jpg" alt="image about us">
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section brands">
+
+        <h2 class="section__heading">Ремонт техники различных брендов</h2>
+
+        <div class="brands__slider">
+          <div class="swiper brands-swiper">
+            <div class="swiper-wrapper brands-wrapper"></div>
+
+            <div class="swiper-slide__shadow"></div>
+            <div class="swiper-pagination brands__pagination"></div>
+          </div>
+
+        </div>
+
+        <div class="brands-grid">
+          <a class="brands__card" href="#" type="brands">
+            <span class="arrow"></span>
+          </a>
+        </div>
+
+        <button class="button show">
+          <img class="button__icon" src="assets/images/arrows_show.svg" alt="button icon">
+          <span class="button__text">Показать все</span>
+        </button>
+
+      </section>
+
+      <section class="section devices">
+
+        <h2 class="section__heading">Ремонт различных видов техники</h2>
+
+        <div class="devices__slider">
+          <div class="swiper devices-swiper">
+            <div class="swiper-wrapper devices-wrapper"></div>
+
+            <div class="swiper-slide__shadow"></div>
+            <div class="swiper-pagination devices__pagination"></div>
+          </div>
+
+        </div>
+
+        <div class="devices-grid">
+          <a class="devices__card" href="#" type="devices">
+            <span class="arrow"></span>
+          </a>
+        </div>
+
+        <button class="button show">
+          <img class="button__icon" src="assets/images/arrows_show.svg" alt="button icon">
+          <span class="button__text">Показать все</span>
+        </button>
+
+      </section>
+
+      <section class="section prices">
+
+        <h2 class="section__heading">Цены на услуги</h2>
+
+        <div class="prices__slider">
+          <div class="swiper prices-swiper">
+            <div class="swiper-wrapper prices-wrapper"></div>
+
+            <div class="swiper-slide__shadow"></div>
+            <div class="swiper-pagination prices__pagination"></div>
+          </div>
+        </div>
+
+        <div class="prices-table">
+
+          <div class="prices-heading">
+            <div>Ремонтные услуги</div>
+            <div>Цена</div>
+            <div>Срок</div>
+            <div>
+              <button class="prices-button prices-button-hidden">
+                <span>Заказать</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                        fill="#FFFFFF"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="prices-row">
+            <div>Диагностика</div>
+            <div>Бесплатно</div>
+            <div>30 мин</div>
+            <div>
+              <button class="prices-button">
+                <span>Заказать</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                        fill="#FFFFFF"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="prices-row">
+            <div>Замена дисплея</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <div>
+              <button class="prices-button">
+                <span>Заказать</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                        fill="#FFFFFF"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="prices-row">
+            <div>Замена полифонического динамика</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <div>
+              <button class="prices-button">
+                <span>Заказать</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                        fill="#FFFFFF"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="prices-row">
+            <div>Тестирование с выдачей технического заключения</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <div>
+              <button class="prices-button">
+                <span>Заказать</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                        fill="#FFFFFF"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+
+          <div class="prices-row">
+            <div>Замена программного обеспечения</div>
+            <div>1 000 ₽</div>
+            <div>30-120 мин</div>
+            <div>
+              <button class="prices-button">
+                <span>Заказать</span>
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                        fill="#FFFFFF"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="prices-text">
+          <p>
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого
+            предложения на постоянное обслуживание, оставьте заявку.
+          </p>
+        </div>
+
+        <button class="button" id="offer">
+          <span class="button__text">Получить коммерческое предложение</span>
+          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                  fill='#FF3E79'/>
+          </svg>
+        </button>
+
+      </section>
+
+      <footer class="section footer">
+        <div>
+          <p class="footer-text__left">© 2019 CPS</p>
+          <p class="footer-text__left">Разработано командой Apesong</p>
+        </div>
+        <div>
+          <p class="footer-text__center">Политика конфиденциальности</p>
+        </div>
+        <div>
+          <p class="footer-text__right">Информация, размещенная на данной странице, не является публичной офертой</p>
+        </div>
+
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../dist/bundle.js"></script>
+</body>
+</html>

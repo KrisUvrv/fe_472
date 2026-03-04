@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  justify-content: center;
+  padding: 19px;
+
+  font-family: "TT Lakes Medium", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: $color-text-menu;
+  margin-bottom: 0;
+}
+

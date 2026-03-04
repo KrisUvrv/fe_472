@@ -1,0 +1,18 @@
+@use "./utils/_variables";
+@use "./utils/_fonts";
+@use "./utils/_base";
+
+
+@use "./blocks/layout";
+@use "./blocks/header";
+@use "./blocks/sidebar";
+@use "./blocks/services";
+@use "./blocks/section";
+@use "./blocks/brands";
+@use "./blocks/devices";
+@use "./blocks/button";
+@use "./blocks/footer";
+@use "./blocks/prices";
+@use "./blocks/modal";
+
+@use "./utils/_media";

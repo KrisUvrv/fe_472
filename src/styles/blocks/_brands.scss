@@ -1,0 +1,40 @@
+@use '../utils/variables' as *;
+
+.brands-grid {
+  display: none;
+}
+
+.brands__slider {
+  padding-left: 16px;
+}
+
+.brands__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px;
+  width: 240px;
+  height: 72px;
+
+  background: $color-main;
+  border: 1px solid $color-divider;
+  border-radius: 12px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.brands__pagination {
+  position: relative;
+  margin-top: 24px;
+}
+
+.brands__pagination {
+  .swiper-pagination-bullet-active {
+    background-color: $swiper-pagination-color;
+  }
+}
+

@@ -1,0 +1,60 @@
+@use '../utils/variables' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-main;
+}
+
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .header__divider {
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background-color: $color-divider;
+    margin-right: 5px;
+  }
+}
+
+.header__left {
+  .header__divider {
+    display: none;
+  }
+}
+
+.header__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: $color-accent-pink;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.header__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header__logo-image {
+  width: 96px;
+  height: auto;
+}
+
+.header__action--call,
+.header__action--chat,
+.header__action--profile {
+  display: none;
+}
+

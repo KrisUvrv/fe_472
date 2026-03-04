@@ -1,0 +1,21 @@
+@use '../utils/variables' as *;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 320px;
+  border-top: 1px solid $color-border;
+  margin-bottom: 24px;
+}
+
+.section__heading {
+  margin: 0;
+  padding: 16px;
+  font-family: 'TT Lakes Regular', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-text-menu;
+  background: linear-gradient(90deg, $color-bg-page 1.39%, $color-main 100%);
+}
+

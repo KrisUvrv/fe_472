@@ -1,0 +1,42 @@
+@use '../utils/variables' as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-left: 32px;
+  width: fit-content;
+  font-family: 'TT Lakes Medium', sans-serif;
+  font-size: 16px;
+  color: $color-text-content;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.button.show {
+  display: none;
+}
+
+.button__icon {
+  width: 7px;
+  height: 10px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid $color-accent-pink;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+  transform: scale(0.95);
+  pointer-events: none;
+}

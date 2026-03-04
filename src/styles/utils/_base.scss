@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  line-height: 24px;
+
+  background: $color-bg-page;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+

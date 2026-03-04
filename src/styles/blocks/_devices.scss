@@ -1,0 +1,55 @@
+@use '../utils/variables' as *;
+
+.devices__slider {
+  padding-left: 16px;
+}
+
+.devices__wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.devices-grid {
+  display: none;
+}
+
+.devices__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px;
+  width: 100%;
+  height: 160px;
+
+  background: $color-main;
+  border: 1px solid $color-divider;
+  border-radius: 12px;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.devices__text {
+  align-self: flex-start;
+  font-family: "TT Lakes Medium", sans-serif;
+  color: $color-text-content;
+}
+
+.devices__card > .arrow {
+  align-self: end;
+}
+
+.devices__pagination {
+  position: relative;
+  margin-top: 24px;
+}
+
+.devices__pagination {
+  .swiper-pagination-bullet-active {
+    background-color: $swiper-pagination-color;
+  }
+}
+

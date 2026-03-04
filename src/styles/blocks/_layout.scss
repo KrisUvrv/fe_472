@@ -1,0 +1,37 @@
+@use '../utils/variables' as *;
+
+.layout {
+  display: flex;
+  background-color: $color-main;
+}
+
+.page {
+  flex: 1;
+  min-width: 0;
+  background-color: $color-bg-page;
+  transition: opacity 0.3s ease;
+}
+
+body.menu-open .sidebar {
+   transform: translateX(0);
+   box-shadow: $shadow;
+}
+
+body.menu-open .page {
+    opacity: 0.08;
+}
+
+body.modal-call-open .modal-call {
+  transform: translateX(0);
+  box-shadow: $shadow;
+}
+
+body.modal-feedback-open .modal-feedback {
+  transform: translateX(0);
+  box-shadow: $shadow;
+}
+
+body.modal-call-open .page,
+body.modal-feedback-open .page {
+  opacity: 0.08;
+}

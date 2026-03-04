@@ -1,0 +1,35 @@
+@use '../utils/variables' as *;
+
+.swiper {
+  width: 100%;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-bottom: 36px;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 36px;
+}
+
+.swiper-slide__shadow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 15px;
+  height: 100%;
+  background: linear-gradient(to left, $color-bg-page, rgba(248, 248, 248, 0));
+  pointer-events: none;
+}
+
+
+
