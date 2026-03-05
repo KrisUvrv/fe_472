@@ -35,3 +35,8 @@ body.modal-call-open .page,
 body.modal-feedback-open .page {
   opacity: 0.08;
 }
+
+body.modal-call-open .sidebar,
+body.modal-feedback-open .sidebar {
+  opacity: 0.08;
+}

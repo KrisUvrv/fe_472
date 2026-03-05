@@ -192,7 +192,7 @@
   .sidebar {
     position: relative;
     transform: none;
-    height: auto;
+    max-height: 887px;
     flex-shrink: 0;
     padding-top: 35px;
   }

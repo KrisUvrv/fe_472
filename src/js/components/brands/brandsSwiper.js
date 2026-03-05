@@ -37,9 +37,9 @@ const createBrandsSlides = () => {
 
 let brandsSwiper = null;
 export const initBrandsSwiper = () => {
-  createBrandsSlides();
 
   if (window.innerWidth < 768 && !brandsSwiper) {
+    createBrandsSlides();
     brandsSwiper = new Swiper('.brands-swiper', {
       modules: [Pagination],
       slidesPerView: 1.2,
