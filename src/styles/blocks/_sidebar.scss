@@ -44,8 +44,8 @@
   gap: 16px;
 }
 
-.sidebar__header-search,
-.sidebar__header-close {
+.sidebar__header_search,
+.sidebar__header_close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +58,7 @@
   margin-left: auto;
 }
 
-.sidebar__header-close {
+.sidebar__header_close {
   margin: 0;
 }
 
@@ -91,8 +91,8 @@
 
 .sidebar__menu-item_active::before,
 .sidebar__menu-item:hover::before,
-.sidebar__menu__item:focus::before,
-.sidebar__menu__item:focus-visible::before {
+.sidebar__menu-item:focus::before,
+.sidebar__menu-item:focus-visible::before {
   opacity: 1;
   transform: scaleY(1);
 }

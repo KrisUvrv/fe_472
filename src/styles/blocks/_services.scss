@@ -26,8 +26,8 @@
   gap: 32px;
 }
 
-.services__button--request,
-.services__button--status {
+.services__button_request,
+.services__button_status {
   display: none;
 }
 
@@ -89,7 +89,7 @@
   text-decoration: none;
 }
 
-.services__menu-item--active {
+.services__menu-item_active {
   background-color: $color-main;
   border: 2px solid $color-accent-mint-light;
   border-radius: 6px;
@@ -99,7 +99,7 @@
   display: none;
 }
 
-.services__reviews-button {
+.services__reviews_button {
   display: none;
 }
 
@@ -129,7 +129,7 @@
   color: $color-text-content;
 }
 
-.page-hero__text-tablet {
+.page-hero__text_tablet {
   display: none;
 }
 

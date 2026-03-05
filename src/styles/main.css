@@ -146,9 +146,9 @@ body.modal-feedback-open .page {
   height: auto;
 }
 
-.header__action--call,
-.header__action--chat,
-.header__action--profile {
+.header__action_call,
+.header__action_chat,
+.header__action_profile {
   display: none;
 }
 
@@ -189,8 +189,8 @@ body.modal-feedback-open .page {
   gap: 16px;
 }
 
-.sidebar__header-search,
-.sidebar__header-close {
+.sidebar__header_search,
+.sidebar__header_close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,7 +203,7 @@ body.modal-feedback-open .page {
   margin-left: auto;
 }
 
-.sidebar__header-close {
+.sidebar__header_close {
   margin: 0;
 }
 
@@ -320,8 +320,8 @@ body.modal-feedback-open .page {
   gap: 32px;
 }
 
-.services__button--request,
-.services__button--status {
+.services__button_request,
+.services__button_status {
   display: none;
 }
 
@@ -377,7 +377,7 @@ body.modal-feedback-open .page {
   text-decoration: none;
 }
 
-.services__menu-item--active {
+.services__menu-item_active {
   background-color: #FFFFFF;
   border: 2px solid #B8FFEC;
   border-radius: 6px;
@@ -387,7 +387,7 @@ body.modal-feedback-open .page {
   display: none;
 }
 
-.services__reviews-button {
+.services__reviews_button {
   display: none;
 }
 
@@ -416,7 +416,7 @@ body.modal-feedback-open .page {
   color: #1B1C21;
 }
 
-.page-hero__text-tablet {
+.page-hero__text_tablet {
   display: none;
 }
 
@@ -454,7 +454,7 @@ br {
   background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
 }
 
-.brands-grid {
+.brands__grid {
   display: none;
 }
 
@@ -495,7 +495,7 @@ br {
   gap: 16px;
 }
 
-.devices-grid {
+.devices__grid {
   display: none;
 }
 
@@ -613,7 +613,7 @@ br {
   justify-content: space-between;
 }
 
-.prices__service-title {
+.prices__service_title {
   font-family: "TT Lakes Medium", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -621,7 +621,7 @@ br {
   color: #7E7E82;
 }
 
-.prices__service-text {
+.prices__service_text {
   font-family: "TT Lakes Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -629,12 +629,12 @@ br {
   color: #1B1C21;
 }
 
-.prices-table {
+.prices__table {
   display: none;
 }
 
-.prices-heading,
-.prices-row {
+.prices__heading,
+.prices__row {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
@@ -642,7 +642,7 @@ br {
   padding: 24px;
 }
 
-.prices-row:not(:last-child)::after {
+.prices__row:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -652,14 +652,14 @@ br {
   background: #EAEAEA;
 }
 
-.prices-heading {
+.prices__heading {
   line-height: 16px;
   letter-spacing: 0;
   color: #7E7E82;
   padding: 0 24px 24px;
 }
 
-.prices-row {
+.prices__row {
   font-size: 14px;
   line-height: 18px;
   color: #1B1C21;
@@ -667,21 +667,21 @@ br {
   padding: 24px;
 }
 
-.prices-row:nth-child(2) {
+.prices__row:nth-child(2) {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
-.prices-row:last-child {
+.prices__row:last-child {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
 
-.prices-row:hover {
+.prices__row:hover {
   background-color: #EAEAEA;
 }
 
-.prices-button {
+.prices__button {
   display: flex;
   align-items: center;
   gap: 17px;
@@ -698,13 +698,13 @@ br {
   cursor: pointer;
 }
 
-.prices-button-hidden {
+.prices__button_hidden {
   opacity: 0;
   cursor: none;
   pointer-events: none;
 }
 
-.prices-text {
+.prices__text {
   font-family: "TT Lakes Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -802,7 +802,7 @@ br {
   color: #1B1C21;
 }
 
-.modal-button__close {
+.modal__button_close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -847,11 +847,11 @@ br {
   color: #1B1C21;
 }
 
-.modal__text-pink {
+.modal__text_pink {
   color: #FF3E79;
 }
 
-.modal-button {
+.modal__button {
   display: flex;
   align-items: center;
   gap: 17px;
@@ -886,7 +886,7 @@ br {
   .modal {
     width: 440px;
   }
-  .modal-button__close {
+  .modal__button_close {
     position: absolute;
     left: -96px;
   }
@@ -905,9 +905,9 @@ br {
     background-color: #EAEAEA;
     margin-right: 0;
   }
-  .header__action--call,
-  .header__action--chat,
-  .header__action--profile {
+  .header__action_call,
+  .header__action_chat,
+  .header__action_profile {
     display: flex;
   }
   .section {
@@ -932,7 +932,7 @@ br {
   .services__description {
     padding: 0;
   }
-  .page-hero__text-tablet {
+  .page-hero__text_tablet {
     display: inline;
   }
   .services__menu {
@@ -944,7 +944,7 @@ br {
   .brands__slider {
     display: none;
   }
-  .brands-grid {
+  .brands__grid {
     display: grid;
     grid-template-columns: repeat(3, 240px);
     place-items: center;
@@ -958,7 +958,7 @@ br {
   .devices__slider {
     display: none;
   }
-  .devices-grid {
+  .devices__grid {
     display: grid;
     grid-template-columns: repeat(3, 240px);
     place-items: center;
@@ -969,7 +969,7 @@ br {
   .prices__slider {
     display: none;
   }
-  .prices-table {
+  .prices__table {
     display: block;
     text-align: left;
     font-family: "TT Lakes Regular", sans-serif;
@@ -977,7 +977,7 @@ br {
     line-height: 18px;
     margin: 0 24px;
   }
-  .prices-text {
+  .prices__text {
     padding: 0 24px;
   }
   #offer {
@@ -991,13 +991,13 @@ br {
     padding: 32px 24px 0;
     margin-bottom: 25px;
   }
-  .footer-text__left {
+  .footer__text_left {
     text-align: left;
   }
-  .footer-text__center {
+  .footer__text_center {
     text-align: center;
   }
-  .footer-text__right {
+  .footer__text_right {
     text-align: right;
   }
   .button.show {
@@ -1025,7 +1025,7 @@ br {
     flex-shrink: 0;
     padding-top: 35px;
   }
-  .sidebar__header-close {
+  .sidebar__header_close {
     display: none;
   }
   .header {
@@ -1040,8 +1040,8 @@ br {
   .services__heading {
     margin-top: 42px;
   }
-  .services__button--request,
-  .services__button--status {
+  .services__button_request,
+  .services__button_status {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1054,7 +1054,7 @@ br {
   .services__reviews {
     display: block;
   }
-  .services__reviews-button {
+  .services__reviews_button {
     display: inline-flex;
     border: none;
     background: none;
@@ -1070,7 +1070,7 @@ br {
   .brands {
     padding-left: 32px;
   }
-  .brands-grid {
+  .brands__grid {
     padding-left: 0;
     grid-template-columns: repeat(4, 240px);
   }
@@ -1080,17 +1080,17 @@ br {
   .devices {
     padding-left: 32px;
   }
-  .devices-grid {
+  .devices__grid {
     padding-left: 0;
     grid-template-columns: repeat(4, 240px);
   }
   .prices {
     padding-left: 32px;
   }
-  .prices-table {
+  .prices__table {
     margin: 0 32px 0 0;
   }
-  .prices-text {
+  .prices__text {
     padding: 0;
   }
   #offer {

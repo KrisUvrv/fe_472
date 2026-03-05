@@ -71,7 +71,7 @@
   color: $color-text-content;
 }
 
-.modal-button__close {
+.modal__button_close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,11 +121,11 @@
   color: $color-text-content ;
 }
 
-.modal__text-pink {
+.modal__text_pink {
   color: $color-accent-pink;
 }
 
-.modal-button {
+.modal__button {
   display: flex;
   align-items: center;
   gap: 17px;

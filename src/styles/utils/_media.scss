@@ -20,7 +20,7 @@
     width: 440px;
   }
 
-  .modal-button__close {
+  .modal__button_close {
     position: absolute;
     left: -96px;
   }
@@ -47,9 +47,9 @@
     }
   }
 
-  .header__action--call,
-  .header__action--chat,
-  .header__action--profile {
+  .header__action_call,
+  .header__action_chat,
+  .header__action_profile {
     display: flex;
   }
 
@@ -81,7 +81,7 @@
     padding: 0;
   }
 
-  .page-hero__text-tablet {
+  .page-hero__text_tablet {
     display: inline;
   }
 
@@ -98,7 +98,7 @@
     display: none;
   }
 
-  .brands-grid {
+  .brands__grid {
     display: grid;
     grid-template-columns: repeat(3, 240px);
     place-items: center;
@@ -115,7 +115,7 @@
     display: none;
   }
 
-  .devices-grid {
+  .devices__grid {
     display: grid;
     grid-template-columns: repeat(3, 240px);
     place-items: center;
@@ -128,7 +128,7 @@
     display: none;
   }
 
-  .prices-table {
+  .prices__table {
     display: block;
     text-align: left;
     font-family: "TT Lakes Regular", sans-serif;
@@ -137,11 +137,11 @@
     margin: 0 24px;
   }
 
-  .prices-text {
+  .prices__text {
     padding: 0 24px;
   }
 
-  #offer {
+  .offer {
     padding-left: 24px;
   }
 
@@ -154,15 +154,15 @@
     margin-bottom: 25px;
   }
 
-  .footer-text__left {
+  .footer__text_left {
     text-align: left;
   }
 
-  .footer-text__center{
+  .footer__text_center {
     text-align: center;
   }
 
-  .footer-text__right {
+  .footer__text_right {
     text-align: right;
   }
 
@@ -197,7 +197,7 @@
     padding-top: 35px;
   }
 
-  .sidebar__header-close {
+  .sidebar__header_close {
     display: none;
   }
 
@@ -217,8 +217,8 @@
     margin-top: 42px;
   }
 
-  .services__button--request,
-  .services__button--status {
+  .services__button_request,
+  .services__button_status {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -233,7 +233,7 @@
     display: block;
   }
 
-  .services__reviews-button {
+  .services__reviews_button {
     display: inline-flex;
     border: none;
     background: none;
@@ -253,7 +253,7 @@
     padding-left: 32px;
   }
 
-  .brands-grid {
+  .brands__grid {
     padding-left: 0;
     grid-template-columns: repeat(4, 240px);
   }
@@ -265,7 +265,7 @@
   .devices {
     padding-left: 32px;
   }
-  .devices-grid {
+  .devices__grid {
     padding-left: 0;
     grid-template-columns: repeat(4, 240px);
   }
@@ -274,15 +274,15 @@
     padding-left: 32px;
   }
 
-  .prices-table {
+  .prices__table {
     margin: 0 32px 0 0;
   }
 
-  .prices-text {
+  .prices__text {
     padding: 0;
   }
 
-  #offer {
+  .offer {
     padding-left: 0;
   }
 

@@ -1,5 +1,5 @@
 {
-  "name": "fe_472_finalmockup",
+  "name": "fe_472",
   "version": "1.0.0",
   "description": "final mockup JS",
   "main": "app.js",
@@ -32,6 +32,7 @@
     "webpack-dev-server": "^5.2.3"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "swiper": "^12.1.2"
   }
 }

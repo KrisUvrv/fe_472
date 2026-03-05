@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/app.js',
+  entry: './src/js/app.js',
 
   output: {
     filename: 'bundle.js',
@@ -13,17 +13,14 @@ module.exports = {
 
   module: {
     rules: [
-      // 1️⃣ CSS из node_modules (например, Swiper)
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-      // 2️⃣ SCSS из твоих файлов
       {
         test: /\.scss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      // 3️⃣ Шрифты
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
@@ -31,7 +28,6 @@ module.exports = {
           filename: 'assets/fonts/[name][ext]',
         },
       },
-      // 4️⃣ Изображения
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',

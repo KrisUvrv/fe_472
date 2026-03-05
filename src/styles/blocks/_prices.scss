@@ -8,7 +8,7 @@
 .prices__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   gap: 16px;
 
   padding: 16px;
@@ -30,15 +30,16 @@
   justify-content: space-between;
 }
 
-.prices__service-title {
+.prices__service_title {
   font-family: "TT Lakes Medium", sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0;
   color: $color-text-menu;
+  text-align: left;
 }
 
-.prices__service-text {
+.prices__service_text {
   font-family: "TT Lakes Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -46,12 +47,12 @@
   color: $color-text-content;
 }
 
-.prices-table {
+.prices__table {
   display: none;
 }
 
-.prices-heading,
-.prices-row {
+.prices__heading,
+.prices__row {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr auto;
@@ -59,7 +60,7 @@
   padding: 24px;
 }
 
-.prices-row:not(:last-child)::after {
+.prices__row:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -69,14 +70,14 @@
   background: $color-divider;
 }
 
-.prices-heading {
+.prices__heading {
   line-height: 16px;
   letter-spacing: 0;
   color: $color-text-menu;
   padding: 0 24px 24px;
 }
 
-.prices-row {
+.prices__row {
   font-size: 14px;
   line-height: 18px;
   color: $color-text-content;
@@ -84,21 +85,21 @@
   padding: 24px;
 }
 
-.prices-row:nth-child(2) {
+.prices__row:nth-child(2) {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
-.prices-row:last-child {
+.prices__row:last-child {
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }
 
-.prices-row:hover {
+.prices__row:hover {
   background-color: $color-divider;
 }
 
-.prices-button {
+.prices__button {
   display: flex;
   align-items: center;
   gap: 17px;
@@ -115,13 +116,13 @@
   cursor: pointer;
 }
 
-.prices-button-hidden {
+.prices__button_hidden {
   opacity: 0;
   cursor: none;
   pointer-events: none;
 }
 
-.prices-text {
+.prices__text {
   font-family: 'TT Lakes Regular', sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -141,7 +142,7 @@
   }
 }
 
-#offer {
+.offer {
   display: inline;
   text-align: left;
   padding-left: 16px;
@@ -151,7 +152,7 @@
   }
 }
 
-#offer::after {
+.offer::after {
   content: "";
   width: 6px;
   height: 12px;
