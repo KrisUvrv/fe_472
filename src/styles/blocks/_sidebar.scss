@@ -92,10 +92,7 @@
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.sidebar__menu-item_active::before,
-.sidebar__menu-item:hover::before,
-.sidebar__menu-item:focus::before,
-.sidebar__menu-item:focus-visible::before {
+.sidebar__menu-item_active::before {
   opacity: 1;
   transform: scaleY(1);
 }
