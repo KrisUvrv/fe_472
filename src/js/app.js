@@ -9,26 +9,54 @@ import { initDevicesSwiper } from "./components/devices/devicesSwiper";
 import { initPricesSwiper } from "./components/prices/pricesSwiper";
 import { initBrands } from "./components/brands/brands";
 import { initDevices } from "./components/devices/devices";
-import { initSectionControllers } from "./components/controller/sectionController";
+import { initSectionControllers } from "./components/controllers/sectionController";
 import { initModals } from "./components/modal/modal";
-import { initBurger } from "./components/controller/burgerController";
+import { initSidebar } from "./components/sidebar/sidebar";
+import { initServicesMenu } from "./components/controllers/servicesMenuController";
+import { subscribeDeviceChange } from "./components/controllers/device";
+import {initSidebarMenu} from "./components/controllers/sidebarMenuController";
 
 const render = () => {
   initBrands();
   initDevices();
+  initServicesMenu();
+  initSidebarMenu();
 }
 
 initSectionControllers(state, render);
 initModals();
-initBurger();
+initSidebar();
+
+let brandsSwiper = null;
+let devicesSwiper = null;
+let pricesSwiper = null;
+const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
 
 const initMobileSwipers = () => {
-  initBrandsSwiper();
-  initDevicesSwiper();
-  initPricesSwiper();
+
+  if (isMobile()) {
+
+    if (!brandsSwiper) brandsSwiper = initBrandsSwiper();
+    if (!devicesSwiper) devicesSwiper = initDevicesSwiper();
+    if (!pricesSwiper) pricesSwiper = initPricesSwiper();
+
+  } else {
+
+    brandsSwiper?.destroy(true, true);
+    devicesSwiper?.destroy(true, true);
+    pricesSwiper?.destroy(true, true);
+
+    brandsSwiper = null;
+    devicesSwiper = null;
+    pricesSwiper = null;
+  }
 };
 
 window.addEventListener('load', initMobileSwipers);
-window.addEventListener('resize', initMobileSwipers);
+
+subscribeDeviceChange(() => {
+  initMobileSwipers();
+  render();
+});
 
 render();

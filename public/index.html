@@ -5,7 +5,6 @@
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
 <title>Final Mockup - CPS</title>
 </head>
 <body>
@@ -164,7 +163,6 @@
 
         <div class="services__heading">
           <div class="services__title">
-            <img class="services__highlight" src="assets/images/highlight.svg" alt="highlight">
             <h1 class="services__title-text">Услуги и сервисы</h1>
           </div>
 
@@ -214,17 +212,16 @@
               </p>
               <br>
               <p class="page-hero__text_tablet">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь,
-                советуют нас родным и близким.
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span
+                class="page-hero__text_desktop">, что подтверждает большое
+                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+                советуют нас родным и близким.</span>
               </p>
               <p class="page-hero__text hidden">
                 <br>
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span
-                class="page-hero__text-span">, что подтверждает большое
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
                 количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
-                советуют нас родным и близким.</span>
+                советуют нас родным и близким.
               </p>
             </div>
 
@@ -249,7 +246,7 @@
           <div class="swiper brands-swiper">
             <div class="swiper-wrapper brands-wrapper"></div>
 
-            <div class="swiper-slide__shadow"></div>
+            <div class="brands__slider_shadow"></div>
             <div class="swiper-pagination brands__pagination"></div>
           </div>
 
@@ -276,7 +273,7 @@
           <div class="swiper devices-swiper">
             <div class="swiper-wrapper devices-wrapper"></div>
 
-            <div class="swiper-slide__shadow"></div>
+            <div class="devices__slider_shadow"></div>
             <div class="swiper-pagination devices__pagination"></div>
           </div>
 
@@ -303,19 +300,20 @@
           <div class="swiper prices-swiper">
             <div class="swiper-wrapper prices-wrapper"></div>
 
-            <div class="swiper-slide__shadow"></div>
+            <div class="prices__slider_shadow"></div>
             <div class="swiper-pagination prices__pagination"></div>
           </div>
         </div>
 
-        <div class="prices__table">
+        <table class="prices__table">
 
-          <div class="prices__heading">
-            <div>Ремонтные услуги</div>
-            <div>Цена</div>
-            <div>Срок</div>
-            <div>
-              <button class="prices__button prices__button_hidden">
+          <thead>
+            <tr class="prices__heading">
+              <th>Ремонтные услуги</th>
+              <th>Цена</th>
+              <th>Срок</th>
+              <th>
+                <button class="prices__button prices__button_hidden">
                 <span>Заказать</span>
                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -323,94 +321,78 @@
                         fill="#FFFFFF"/>
                 </svg>
               </button>
-            </div>
-          </div>
+              </th>
+            </tr>
+          </thead>
 
-          <div class="prices__row">
-            <div>Диагностика</div>
-            <div>Бесплатно</div>
-            <div>30 мин</div>
-            <div>
-              <button class="prices__button">
-                <span>Заказать</span>
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
-                        fill="#FFFFFF"/>
-                </svg>
-              </button>
-            </div>
-          </div>
+          <tbody>
 
+            <tr class="prices__row">
+              <td>Диагностика</td>
+              <td>Бесплатно</td>
+              <td>30 мин</td>
+              <td>
+                <button class="prices__button">
+                  <span>Заказать</span>
+                  <svg width="7" height="12" viewBox="0 0 7 12">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                          fill="#FFFFFF"/>
+                  </svg>
+                </button>
+              </td>
+            </tr>
 
-          <div class="prices__row">
-            <div>Замена дисплея</div>
-            <div>1 000 ₽</div>
-            <div>30-120 мин</div>
-            <div>
-              <button class="prices__button">
-                <span>Заказать</span>
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
-                        fill="#FFFFFF"/>
-                </svg>
-              </button>
-            </div>
-          </div>
+            <tr class="prices__row">
+              <td>Замена дисплея</td>
+              <td>1 000 ₽</td>
+              <td>30-120 мин</td>
+              <td>
+                <button class="prices__button">
+                  <span>Заказать</span>
+                  <svg width="7" height="12" viewBox="0 0 7 12">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                          fill="#FFFFFF"/>
+                  </svg>
+                </button>
+              </td>
+            </tr>
 
+            <tr class="prices__row">
+              <td>Замена полифонического динамика</td>
+              <td>1 000 ₽</td>
+              <td>30-120 мин</td>
+              <td>
+                <button class="prices__button">
+                  <span>Заказать</span>
+                  <svg width="7" height="12" viewBox="0 0 7 12">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                          fill="#FFFFFF"/>
+                  </svg>
+                </button>
+              </td>
+            </tr>
 
-          <div class="prices__row">
-            <div>Замена полифонического динамика</div>
-            <div>1 000 ₽</div>
-            <div>30-120 мин</div>
-            <div>
-              <button class="prices__button">
-                <span>Заказать</span>
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
-                        fill="#FFFFFF"/>
-                </svg>
-              </button>
-            </div>
-          </div>
+            <tr class="prices__row">
+              <td>Тестирование с выдачей технического заключения</td>
+              <td>1 000 ₽</td>
+              <td>30-120 мин</td>
+              <td>
+                <button class="prices__button">
+                  <span>Заказать</span>
+                  <svg width="7" height="12" viewBox="0 0 7 12">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
+                          fill="#FFFFFF"/>
+                  </svg>
+                </button>
+              </td>
+            </tr>
 
-
-          <div class="prices__row">
-            <div>Тестирование с выдачей технического заключения</div>
-            <div>1 000 ₽</div>
-            <div>30-120 мин</div>
-            <div>
-              <button class="prices__button">
-                <span>Заказать</span>
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
-                        fill="#FFFFFF"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-
-          <div class="prices__row">
-            <div>Замена программного обеспечения</div>
-            <div>1 000 ₽</div>
-            <div>30-120 мин</div>
-            <div>
-              <button class="prices__button">
-                <span>Заказать</span>
-                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M4.08569 5.58569L0.292799 1.7928C-0.097725 1.40227 -0.0977242 0.769111 0.2928 0.378587L0.378586 0.292801C0.76911 -0.0977237 1.40228 -0.0977241 1.7928 0.2928L6.37859 4.87859C6.76911 5.26911 6.76911 5.90228 6.37859 6.2928L1.7928 10.8786C1.40228 11.2691 0.769111 11.2691 0.378587 10.8786L0.292801 10.7928C-0.0977237 10.4023 -0.0977241 9.76911 0.2928 9.37859L4.08569 5.58569Z"
-                        fill="#FFFFFF"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-        </div>
+          </tbody>
+        </table>
 
         <div class="prices__text">
           <p>
@@ -432,21 +414,23 @@
 
       <footer class="section footer">
         <div>
-          <p class="footer__text_left">© 2019 CPS</p>
-          <p class="footer__text_left">Разработано командой Apesong</p>
+          <a href="#">
+            <p class="footer__text_left">© 2019 CPS</p>
+            <p class="footer__text_left">Разработано командой Apesong</p></a>
         </div>
         <div>
-          <p class="footer__text_center">Политика конфиденциальности</p>
+          <a href="#"><p class="footer__text_center">Политика конфиденциальности</p></a>
         </div>
         <div>
-          <p class="footer__text_right">Информация, размещенная на данной странице, не является публичной офертой</p>
+          <a href="#"><p class="footer__text_right">Информация, размещенная на данной странице, не является публичной офертой</p></a>
         </div>
-
       </footer>
     </div>
 
   </div>
 
-  <script src="../dist/bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <script type="module" src="/dist/bundle.js"></script>
+
 </body>
 </html>

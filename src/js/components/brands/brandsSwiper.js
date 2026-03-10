@@ -30,18 +30,14 @@ const createBrandsSlides = () => {
 
     return swiperSlide;
   });
-
   brandsWrapper.append(...swiperSlides);
-
 };
 
-let brandsSwiper = null;
 export const initBrandsSwiper = () => {
-
-  if (window.innerWidth < 768 && !brandsSwiper) {
     createBrandsSlides();
-    brandsSwiper = new Swiper('.brands-swiper', {
+    return new Swiper('.brands-swiper', {
       modules: [Pagination],
+      spaceBetween: 16,
       slidesPerView: 1.2,
       loop: true,
       pagination: {
@@ -50,10 +46,4 @@ export const initBrandsSwiper = () => {
         dynamicBullets: true,
       },
     });
-  }
-
-  if (window.innerWidth >= 768 && brandsSwiper) {
-    brandsSwiper.destroy(true, true);
-    brandsSwiper = null;
-  }
 };

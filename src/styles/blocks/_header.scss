@@ -40,6 +40,12 @@
   border-radius: 50%;
   cursor: pointer;
   border: none;
+
+  transition: background-color 0.3s ease;
+}
+
+.header__action:hover {
+  background-color: #ab2d57;
 }
 
 .header__icon {

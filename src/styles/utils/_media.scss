@@ -57,6 +57,10 @@
     margin-bottom: 32px;
   }
 
+  .services__title-text {
+    margin: 0 0 0 20px;
+  }
+
   .section__heading {
     padding: 24px;
   }
@@ -100,15 +104,16 @@
 
   .brands__grid {
     display: grid;
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(3, 224px);
     place-items: center;
     column-gap: 32px;
     padding-left: 16px;
+    padding-right: 16px;
     gap: 16px;
   }
 
   .brands__card {
-    width: 224px;
+    width: 100%;
   }
 
   .devices__slider {
@@ -117,11 +122,15 @@
 
   .devices__grid {
     display: grid;
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(3, 224px);
     place-items: center;
     column-gap: 32px;
-    gap: 16px;
-    padding-left: 24px;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .devices__card {
+    width: 100%;
   }
 
   .prices__slider {
@@ -217,6 +226,20 @@
     margin-top: 42px;
   }
 
+  .services__title-text {
+    margin: 0 0 0 35px;
+  }
+
+  .services__title::before {
+    left: 2px;
+    width: 2px;
+  }
+
+  .services__image {
+    width: 532px;
+    border-radius: 6px;
+  }
+
   .services__button_request,
   .services__button_status {
     display: flex;
@@ -249,17 +272,22 @@
     padding-left: 34px;
   }
 
+  .page-hero__text_desktop {
+    display: inline;
+  }
+
   .brands {
     padding-left: 32px;
   }
 
   .brands__grid {
     padding-left: 0;
+    gap: 32px;
     grid-template-columns: repeat(4, 240px);
   }
 
   .brands__card {
-    width: 240px;
+    width: 100%;
   }
 
   .devices {
@@ -267,7 +295,12 @@
   }
   .devices__grid {
     padding-left: 0;
+    gap: 32px;
     grid-template-columns: repeat(4, 240px);
+  }
+
+  .devices__card {
+    width: 100%;
   }
 
   .prices {
@@ -275,7 +308,7 @@
   }
 
   .prices__table {
-    margin: 0 32px 0 0;
+    margin: 0 0 16px 0;
   }
 
   .prices__text {

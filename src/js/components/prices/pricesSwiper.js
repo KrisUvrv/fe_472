@@ -10,6 +10,7 @@ const createPricesSlides = () => {
   PRICES.forEach((item) => {
     const slide = document.createElement('div');
     slide.className = 'swiper-slide';
+    slide.classList.add('prices__slide');
 
     const card = document.createElement('div');
     card.className = 'prices__card';
@@ -50,12 +51,9 @@ const createPricesSlides = () => {
   });
 };
 
-let pricesSwiper = null;
-
 export const initPricesSwiper = () => {
-  if (window.innerWidth < 768 && !pricesSwiper) {
     createPricesSlides();
-      pricesSwiper = new Swiper('.prices-swiper', {
+     return new Swiper('.prices-swiper', {
         modules: [Pagination],
         slidesPerView: 1.05,
         spaceBetween: 16,
@@ -66,13 +64,4 @@ export const initPricesSwiper = () => {
           dynamicBullets: true,
         },
       });
-    } else {
-
-    if (pricesSwiper) {
-      pricesSwiper.destroy(true, true);
-      pricesSwiper = null;
-    }
-
-    pricesWrapper.innerHTML = '';
-  }
 };

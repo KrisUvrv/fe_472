@@ -33,7 +33,8 @@
   }
 
   button:hover {
-    opacity: 70%;
+    background-color: $color-button-hover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -56,6 +57,8 @@
   cursor: pointer;
   border: none;
   margin-left: auto;
+
+  transition: box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
 .sidebar__header_close {
@@ -118,6 +121,8 @@
     border-radius: 50%;
     cursor: pointer;
     border: none;
+
+    transition: box-shadow 0.2s ease, background-color 0.3s ease;
   }
 }
 
@@ -132,12 +137,13 @@
   display: flex;
   gap: 7px;
   margin-top: 24px;
+
 }
 
 .sidebar__footer-item {
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, box-shadow 0.2s ease;
 }
 
 .sidebar__footer-item:hover,

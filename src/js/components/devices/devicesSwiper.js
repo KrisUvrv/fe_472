@@ -34,14 +34,9 @@ const createDevicesSlides = () => {
   });
 };
 
-
-let devicesSwiper = null;
-
 export const initDevicesSwiper = () => {
-  if (window.innerWidth < 768 && !devicesSwiper) {
     createDevicesSlides();
-
-    devicesSwiper = new Swiper('.devices-swiper', {
+    return new Swiper('.devices-swiper', {
       modules: [Pagination],
       slidesPerView: 1.2,
       spaceBetween: 16,
@@ -52,10 +47,4 @@ export const initDevicesSwiper = () => {
         dynamicBullets: true,
       },
     });
-  }
-
-  if (window.innerWidth >= 768 && devicesSwiper) {
-    devicesSwiper.destroy(true, true);
-    devicesSwiper = null;
-  }
 };

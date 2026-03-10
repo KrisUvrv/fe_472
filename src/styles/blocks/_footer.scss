@@ -14,5 +14,13 @@
   letter-spacing: 0;
   color: $color-text-menu;
   margin-bottom: 0;
+
+  p:hover {
+    color: $color-text-content;
+  }
+
+  a:visited {
+    color: $color-text-menu;
+  }
 }
 

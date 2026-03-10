@@ -9,7 +9,31 @@
   flex: 1;
   min-width: 0;
   background-color: $color-bg-page;
-  transition: opacity 0.3s ease;
+  transition:
+          filter 0.3s ease, opacity 0.3s ease;;
+}
+
+.sidebar {
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+body.menu-open,
+body.modal-call-open,
+body.modal-feedback-open {
+  overflow: hidden;
+}
+
+body.menu-open .page,
+body.modal-call-open .page,
+body.modal-feedback-open .page {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+body.modal-call-open .sidebar,
+body.modal-feedback-open .sidebar {
+  filter: blur(4px);
+  pointer-events: none;
 }
 
 body.menu-open .sidebar {
@@ -17,9 +41,9 @@ body.menu-open .sidebar {
    box-shadow: $shadow;
 }
 
-body.menu-open .page {
-    opacity: 0.08;
-}
+//body.menu-open .page {
+//    opacity: 0.08;
+//}
 
 body.modal-call-open .modal-call {
   transform: translateX(0);
@@ -31,12 +55,12 @@ body.modal-feedback-open .modal-feedback {
   box-shadow: $shadow;
 }
 
-body.modal-call-open .page,
-body.modal-feedback-open .page {
-  opacity: 0.08;
-}
+//body.modal-call-open .page,
+//body.modal-feedback-open .page {
+//  opacity: 0.08;
+//}
 
-body.modal-call-open .sidebar,
-body.modal-feedback-open .sidebar {
-  opacity: 0.08;
-}
+//body.modal-call-open .sidebar,
+//body.modal-feedback-open .sidebar {
+//  opacity: 0.08;
+//}
